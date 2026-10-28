@@ -1,0 +1,10 @@
+EmployeeApi/bin/
+EmployeeApi/obj/
+EmployeeApi/wwwroot/photos/*
+!EmployeeApi/wwwroot/photos/.gitkeep
+
+employee-front/node_modules/
+employee-front/dist/
+
+.vs/
+.vscode/

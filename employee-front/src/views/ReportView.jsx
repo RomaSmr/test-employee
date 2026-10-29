@@ -1,14 +1,10 @@
 import { useState } from 'react'
-import { API } from './api'
+import { API } from '../api'
+import { formatDate } from '../utils/format'
 import {
   Typography, TextField, Button, MenuItem, Alert, Stack, Box,
   Table, TableHead, TableBody, TableRow, TableCell, Paper
 } from '@mui/material'
-
-function formatDate(s) {
-  if (!s) return ''
-  return s.split('-').reverse().join('.')
-}
 
 const typeNames = {
   1: 'Приём',

@@ -1,4 +1,4 @@
-import { API } from './api'
+import { API } from '../api'
 
 function Avatar({ photoPath, gender }) {
   if (photoPath) {

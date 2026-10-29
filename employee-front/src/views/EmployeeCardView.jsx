@@ -1,24 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { API } from './api'
-import Avatar from './Avatar'
+import { API } from '../api'
+import Avatar from '../components/Avatar'
+import { formatDate, yearsText } from '../utils/format'
 import {
   Typography, TextField, Button, MenuItem, Alert, Stack, Box, Chip, Paper
 } from '@mui/material'
-
-function formatDate(s) {
-  if (!s) return ''
-  return s.split('-').reverse().join('.')
-}
-
-function yearsText(n) {
-  const last = n % 10
-  const last2 = n % 100
-  if (last2 >= 11 && last2 <= 14) return n + ' лет'
-  if (last === 1) return n + ' год'
-  if (last >= 2 && last <= 4) return n + ' года'
-  return n + ' лет'
-}
 
 function EmployeeCard() {
   const { id } = useParams()

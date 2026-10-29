@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { API } from './api'
+import { API } from '../api'
+import { formatDate } from '../utils/format'
 import {
   Typography, TextField, Button, MenuItem, Alert, Stack,
   Table, TableHead, TableBody, TableRow, TableCell, Paper
@@ -13,11 +14,6 @@ const emptyForm = {
   createdDate: '',
   closedDate: '',
   parentId: ''
-}
-
-function formatDate(s) {
-  if (!s) return ''
-  return s.split('-').reverse().join('.')
 }
 
 function Departments() {

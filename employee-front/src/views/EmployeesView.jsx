@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { API } from './api'
+import { API } from '../api'
 import {
   Typography, TextField, Button, MenuItem, Alert, Stack, Chip,
   Table, TableHead, TableBody, TableRow, TableCell, Paper
